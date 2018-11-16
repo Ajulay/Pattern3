@@ -20,7 +20,7 @@ public class NailMaster extends Handler{
                 @Override
                 public void run() {
                     try {
-                        Thread.sleep(4000);
+                        Thread.sleep(4000); //время работы мастера
                         setBusy(false);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
