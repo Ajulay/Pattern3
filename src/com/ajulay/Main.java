@@ -1,9 +1,5 @@
 package com.ajulay;
 
-import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -13,9 +9,6 @@ public class Main {
         Handler tmp = handler;
         for (int i = 0; i < masters.length; i++) {
             tmp = tmp.link(masters[i]);
-//            if(i%2!=0){
-//                masters[i].setBusy(true);
-//            }
 
         }
                 tmp.link(handler);
